@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade — Facilite - SGDE</title>
+  <style>
+    :root {
+      --primary: #1565c0;
+      --primary-light: #e3f2fd;
+      --text: #222;
+      --muted: #555;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #dce4ec;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 32px 28px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    }
+    .badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 24px;
+      color: var(--primary);
+    }
+    .updated {
+      margin: 0 0 24px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    h2 {
+      margin: 24px 0 8px;
+      font-size: 17px;
+      color: #0d47a1;
+    }
+    p, li {
+      font-size: 15px;
+      color: #333;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 8px 0 16px;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #0f172a;
+    }
+    .callout {
+      background: #eef6ff;
+      border-left: 4px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 20px 0;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="badge">Chrome Extension · Manifest V3 · LGPD</div>
+    <h1>Política de Privacidade — Facilite - SGDE</h1>
+    <p class="updated">Última atualização: 22 de novembro de 2026</p>
+
+    <div class="callout">
+      <strong>Resumo:</strong> A extensão <strong>Facilite - SGDE</strong> processa todas as planilhas e notas exclusivamente dentro do navegador do usuário. Nenhum dado de estudante, turma, nota ou credencial é coletado, transmitido ou armazenado em servidores externos.
+    </div>
+
+    <h2>1. Dados processados e finalidade</h2>
+    <p>
+      A extensão tem como único propósito auxiliar professores da rede estadual de Mato Grosso do Sul a criar avaliações e preencher notas no Diário de Classe do SGDE a partir de arquivos locais (<code>.xlsx</code>, <code>.xls</code>, <code>.csv</code> ou texto colado).
+    </p>
+    <ul>
+      <li><strong>Leitura local de planilhas:</strong> a interpretação dos arquivos ocorre integralmente na memória do navegador por meio da biblioteca SheetJS empacotada na própria extensão, sem chamadas de rede externas.</li>
+      <li><strong>Zero coleta pessoal:</strong> a extensão não coleta, não vende, não compartilha e não envia para terceiros nomes de estudantes, códigos de matrícula, notas, turmas ou senhas de acesso.</li>
+    </ul>
+
+    <h2>2. Escopo de atuação e permissões</h2>
+    <ul>
+      <li><strong>Restrição de domínio:</strong> o script atua exclusivamente nas páginas do Diário de Classe em <code>https://www.sgde.ms.gov.br/Professor/ManterDiario*</code>.</li>
+      <li><strong>Execução no contexto da página (<code>world: "MAIN"</code>):</strong> utilizada apenas para disparar os eventos nativos exigidos pela interface AngularJS do SGDE ao preencher os campos de avaliação e nota, mantendo a conferência e o salvamento final sob controle do usuário.</li>
+      <li><strong>Permissões extras:</strong> a extensão não solicita acesso a histórico de navegação, abas abertas fora do SGDE, cookies ou localização.</li>
+    </ul>
+
+    <h2>3. Armazenamento local</h2>
+    <p>
+      Para melhorar a experiência de uso, a extensão salva apenas preferências visuais de interface no <code>localStorage</code> do navegador do próprio usuário (posição do painel flutuante e tamanho de fonte selecionado). Esses dados permanecem exclusivamente no dispositivo local e podem ser apagados a qualquer momento nas configurações do navegador.
+    </p>
+
+    <h2>4. Apoio voluntário</h2>
+    <p>
+      A interface exibe uma opção informativa de apoio voluntário via Pix. Eventuais transferências são realizadas diretamente pelo usuário em seu aplicativo bancário, sem intermediação, rastreamento ou coleta de dados financeiros pela extensão.
+    </p>
+
+    <h2>5. Contato e alterações</h2>
+    <p>
+      Dúvidas sobre esta Política de Privacidade podem ser enviadas pelo canal de suporte exibido na página oficial da extensão na Chrome Web Store. Caso futuras atualizações alterem o funcionamento da extensão, esta página será atualizada com a nova data de vigência.
+    </p>
+
+    <footer>
+      Facilite - SGDE — Ferramenta independente de apoio docente com processamento 100% local.
+    </footer>
+  </main>
+</body>
+</html>
